@@ -16,25 +16,23 @@ namespace ECommerce.Repository
         }
         public async Task<Item> CreateAsync(Item itemModel)
         {
-            var itemName = itemModel.ItemName;
-            var categoryName = itemModel.CategoryName;
+            var existingitem = await _context.Items.FirstOrDefaultAsync(x => x.ItemName == itemModel.ItemName);
 
-            var existingitem = await _context.Items.FirstOrDefaultAsync(x => x.ItemName == itemName);
-
-            var existingCategory = await _context.Categories.FirstOrDefaultAsync(c => c.CategoryName == categoryName);
+            var existingCategory = await _context.Categories.FirstOrDefaultAsync(c => c.CategoryName == itemModel.CategoryName);
 
             if (existingitem != null)
             {
                 return null;
             }
 
-            if (existingCategory == null)
+            if (existingCategory != null)
             {
                 return null;
             }
             await _context.Items.AddAsync(itemModel);
             await _context.SaveChangesAsync();
             return itemModel;
+
         }
 
         public async Task<Item?> DeleteAsync(int id)
@@ -104,7 +102,7 @@ namespace ECommerce.Repository
             {
                 return null;
             }
-
+ 
             existingItem.Store = itemDto.Store;
             existingItem.QuantityInStock = itemDto.QuantityInStock;
             existingItem.UnitPrice = itemDto.UnitPrice;

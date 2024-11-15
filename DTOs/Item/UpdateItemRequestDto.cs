@@ -4,10 +4,10 @@ namespace ECommerce.DTOs.Item
 {
     public class UpdateItemRequestDto
     {
-        [Required]
-        [MinLength(3, ErrorMessage = "Product Name cannot be less than 3 characters")]
-        [MaxLength(50, ErrorMessage = "Product Name cannot be over 50 chatacters")]
-        public string ItemName { get; set; } = string.Empty;
+        //[Required]
+        //[MinLength(3, ErrorMessage = "Product Name cannot be less than 3 characters")]
+        //[MaxLength(50, ErrorMessage = "Product Name cannot be over 50 chatacters")]
+        //public string ItemName { get; set; } = string.Empty;
 
         [Required]
         [MinLength(3, ErrorMessage = "Store cannot be less than 3 characters")]
@@ -17,9 +17,6 @@ namespace ECommerce.DTOs.Item
         [Required]
         [Range(0, 100000)]
         public int QuantityInStock { get; set; }
-
-        [Required]
-        public int CategoryId { get; set; }
 
         [Required]
         [Range(0, 5000000)]

@@ -20,13 +20,13 @@ namespace ECommerce.Repository
 
         public async Task<Category> CreateAsync(Category categoryModel)
         {
-            var categoryName = categoryModel.CategoryName;
-            var existingCategory = await _context.Categories.FirstOrDefaultAsync(x => x.CategoryName == categoryName);
+            var existingCategory = await _context.Categories.FirstOrDefaultAsync(x => x.CategoryName == categoryModel.CategoryName);
 
-            if (existingCategory == null)
+            if (existingCategory != null)
             {
                 return null;
             }
+
             await _context.Categories.AddAsync(categoryModel);
             await _context.SaveChangesAsync();
             return categoryModel;
@@ -56,6 +56,11 @@ namespace ECommerce.Repository
             return await _context.Categories.Include(i => i.Item).FirstOrDefaultAsync(c => c.CategoryId == id);
         }
 
+        public async Task<Category?> GetByNameAsync(string categoryName)
+        {
+            return await _context.Categories.FirstOrDefaultAsync(t => t.CategoryName == categoryName);
+        }
+
         public async Task<Category?> UpdateAsync(int id, UpdateCategoryRequestDto categoryDto)
         {
             var existingCategory = await _context.Categories.FirstOrDefaultAsync(x => x.CategoryId == id);
@@ -63,7 +68,6 @@ namespace ECommerce.Repository
             {
                 return null;
             }
-
 
             existingCategory.CategoryName = categoryDto.CategoryName;
 

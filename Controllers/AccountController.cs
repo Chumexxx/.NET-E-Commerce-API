@@ -33,22 +33,8 @@ namespace ECommerce.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                var username = customerRegisterDto.UserName;
-                var FirstName = customerRegisterDto.FirstName;
-                var LastName = customerRegisterDto.LastName;
-                var email = customerRegisterDto.Email;
-                var PhoneNumber = customerRegisterDto.PhoneNumber;
-                var DateOfBirth = customerRegisterDto.DateOfBirth;
-                var HomeAddress = customerRegisterDto.HomeAddress;
-                var Password = customerRegisterDto.Password;
-                var PasswordConfirmation = customerRegisterDto.PasswordComfirmation;
-
-
-                var user = await _userManager.FindByEmailAsync(email);
-                if (user != null) return BadRequest("Email is alraedy being used by another user");
-
-                if (customerRegisterDto.Password != customerRegisterDto.PasswordComfirmation) return BadRequest("Your password comfirmation did not match the inputed password. Try again!");
-
+                var user = await _userManager.FindByEmailAsync(customerRegisterDto.Email);
+                if (user != null) return BadRequest("Email is already being used");
 
                 var appUser = new AppUser
                 {
@@ -101,22 +87,8 @@ namespace ECommerce.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                var username = staffRegisterDto.UserName;
-                var FirstName = staffRegisterDto.FirstName;
-                var LastName = staffRegisterDto.LastName;
-                var email = staffRegisterDto.Email;
-                var PhoneNumber = staffRegisterDto.PhoneNumber;
-                var DateOfBirth = staffRegisterDto.DateOfBirth;
-                var HomeAddress = staffRegisterDto.HomeAddress;
-                var Password = staffRegisterDto.Password;
-                var PasswordConfirmation = staffRegisterDto.PasswordComfirmation;
-
-
-                var user = await _userManager.FindByEmailAsync(email);
-                if (user != null) return BadRequest("Email is alraedy being used by another user");
-
-                if (staffRegisterDto.Password != staffRegisterDto.PasswordComfirmation) return BadRequest("Your password comfirmation did not match the inputed password. Try again!");
-
+                var user = await _userManager.FindByEmailAsync(staffRegisterDto.Email);
+                if (user != null) return BadRequest("Email is already being used.");
 
                 var appUser = new AppUser
                 {
@@ -169,22 +141,8 @@ namespace ECommerce.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                var username = superAdminRegisterDto.UserName;
-                var FirstName = superAdminRegisterDto.FirstName;
-                var LastName = superAdminRegisterDto.LastName;
-                var email = superAdminRegisterDto.Email;
-                var phoneNumber = superAdminRegisterDto.PhoneNumber;
-                var DateOfBirth = superAdminRegisterDto.DateOfBirth;
-                var HomeAddress = superAdminRegisterDto.HomeAddress;
-                var Password = superAdminRegisterDto.Password;
-                var PasswordConfirmation = superAdminRegisterDto.PasswordComfirmation;
-
-
-                var user = await _userManager.FindByEmailAsync(email);
-                if (user != null) return BadRequest("Email is alraedy being used by another user");
-
-                if (superAdminRegisterDto.Password != superAdminRegisterDto.PasswordComfirmation) return BadRequest("Your password comfirmation did not match the inputed password. Try again!");
-
+                var user = await _userManager.FindByEmailAsync(superAdminRegisterDto.Email);
+                if (user != null) return BadRequest("Email is already being used.");
 
                 var appUser = new AppUser
                 {

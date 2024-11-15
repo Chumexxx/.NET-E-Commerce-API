@@ -38,11 +38,8 @@ namespace ECommerce.Mappers
         {
             return new Item
             {
-
-                ItemName = itemDto.ItemName,
                 Store = itemDto.Store,
                 QuantityInStock = itemDto.QuantityInStock,
-                CategoryId = itemDto.CategoryId,
                 UnitPrice = itemDto.UnitPrice,
                 Description = itemDto.Description,
 

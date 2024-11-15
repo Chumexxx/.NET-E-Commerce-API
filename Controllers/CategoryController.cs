@@ -24,12 +24,9 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
         public async Task<IActionResult> GetAllCategories()
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            var categories = await _categoryRepo.GetAllAsync();
 
-            var category = await _categoryRepo.GetAllAsync();
-
-            var categoryDto = category.Select(s => s.ToCategoryDto()).ToList();
+            var categoryDto = categories.Select(s => s.ToCategoryDto()).ToList();
 
             return Ok(categoryDto);
         }
@@ -38,14 +35,11 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
         public async Task<IActionResult> GetCategoryById([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var category = await _categoryRepo.GetByIdAsync(id);
 
             if (category == null)
             {
-                return NotFound();
+                return NotFound("The Id you entered does not exist");
             }
 
             return Ok(category.ToCategoryDto());
@@ -58,12 +52,14 @@ namespace ECommerce.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var categoryModel = categoryDto.ToCategoryFromCreateDto();
+            var category = await _categoryRepo.GetByNameAsync(categoryDto.CategoryName);
 
-            if (categoryModel == null)
+            if (category != null)
             {
-                return NotFound("This category name already exists");
+                return BadRequest("This category already exists");
             }
+
+            var categoryModel = categoryDto.ToCategoryFromCreateDto();
 
             categoryModel.CreatedOn = DateTime.Now;
 
@@ -81,10 +77,18 @@ namespace ECommerce.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var category = await _categoryRepo.UpdateAsync(id, updateDto);
+            var category = await _categoryRepo.GetByIdAsync(id);
+
             if (category == null)
             {
                 return NotFound("Category not found");
+            }
+
+            var categoryModel = await _categoryRepo.UpdateAsync(id, updateDto);
+
+            if (categoryModel == null)
+            {
+                return NotFound();
             }
 
             return Ok(category.ToCategoryDto());
@@ -102,7 +106,7 @@ namespace ECommerce.Controllers
 
             if (categoryModel == null)
             {
-                return NotFound("Order does not exist");
+                return NotFound("Category not found");
             }
 
             return Ok(categoryModel);

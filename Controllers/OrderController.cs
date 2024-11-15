@@ -112,42 +112,38 @@ namespace ECommerce.Controllers
 
             try
             {
-                // First, validate all items without updating the database
                 foreach (var checkedItem in orderDto.Items)
                 {
                     var item = await _itemRepo.GetByIdAsync(checkedItem.ItemId);
+
                     if (item == null)
                     {
-                        errorMessages.Add($"Item with ID {checkedItem.ItemId} does not exist.");
-                        continue;
+                        await transaction.RollbackAsync();
+                        return BadRequest(new
+                        {
+                            Message = $"Item with ID {checkedItem.ItemId} does not exist.",
+                        });
                     }
+
+                    item.QuantityInStock -= checkedItem.QtyNeeded;
 
                     if (checkedItem.QtyNeeded <= 0)
                     {
-                        errorMessages.Add($"Quantity for item with ID {checkedItem.ItemId} must be at least 1.");
-                        continue;
+                        await transaction.RollbackAsync();
+                        return BadRequest(new
+                        {
+                            Message = $"Quantity for item with ID {checkedItem.ItemId} must be at least 1.",
+                        });
                     }
 
                     if (checkedItem.QtyNeeded > item.QuantityInStock)
                     {
-                        errorMessages.Add($"Item with ID {checkedItem.ItemId} is out of stock. Only {item.QuantityInStock} units available.");
+                        await transaction.RollbackAsync();
+                        return BadRequest(new
+                        {
+                            Message = $"Item with ID {checkedItem.ItemId} is out of stock. Only {item.QuantityInStock} units available.",
+                        });
                     }
-                }
-
-                if (errorMessages.Any())
-                {
-                    await transaction.RollbackAsync();
-                    return BadRequest(new
-                    {
-                        Message = "Order could not be placed because some item IDs were invalid.",
-                        Errors = errorMessages
-                    });
-                }
-
-                foreach (var checkedItem in orderDto.Items)
-                {
-                    var item = await _itemRepo.GetByIdAsync(checkedItem.ItemId);
-                    item.QuantityInStock -= checkedItem.QtyNeeded;
 
                     var itemDto = new UpdateItemRequestDto
                     {

@@ -1,9 +1,11 @@
 ﻿using ECommerce.Data;
+using ECommerce.DTOs.Category;
 using ECommerce.DTOs.Item;
 using ECommerce.Helpers;
 using ECommerce.Interfaces;
 using ECommerce.Mappers;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.Controllers
@@ -25,9 +27,6 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
         public async Task<IActionResult> GetAllItems([FromQuery] QueryObject query)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var items = await _itemRepo.GetAllAsync(query);
 
             var itemDto = items.Select(p => p.ToItemDto()).ToList();
@@ -39,9 +38,6 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
         public async Task<IActionResult> GetItemById([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var item = await _itemRepo.GetByIdAsync(id);
 
             if (item == null)
@@ -59,16 +55,21 @@ namespace ECommerce.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
+            var item = await _itemRepo.GetByNameAsync(itemDto.ItemName);
+
+            if (item != null)
+            {
+                return BadRequest("This item already exists");
+            }
+
             var itemModel = itemDto.ToItemFromCreateDto();
 
-            if (itemModel == null)
-            {
-                return BadRequest("This product is already in category!");
-            }
+            itemModel.CreatedOn = DateTime.Now;
 
             await _itemRepo.CreateAsync(itemModel);
 
             return CreatedAtAction(nameof(CreateItem), new { id = itemModel.ItemId }, itemModel.ToItemDto());
+
         }
 
         [HttpPut]
@@ -83,7 +84,7 @@ namespace ECommerce.Controllers
 
             if (itemModel == null)
             {
-                return NotFound();
+                return NotFound("Item does not exist");
             }
 
             return Ok(itemModel.ToItemDto());
@@ -101,10 +102,10 @@ namespace ECommerce.Controllers
 
             if (itemModel == null)
             {
-                return NotFound("Product does not exist");
+                return NotFound("Item does not exist");
             }
 
-            return Ok(new { message = "Product had been deleted successfully" });
+            return Ok(new { message = "Item had been deleted successfully" });
         }
     }
 }
