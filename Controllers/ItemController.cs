@@ -95,9 +95,6 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> DeleteItem([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var itemModel = await _itemRepo.DeleteAsync(id);
 
             if (itemModel == null)

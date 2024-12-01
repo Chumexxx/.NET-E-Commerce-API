@@ -3,28 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\order\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\order\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\interfaces\\iordereditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:interfaces\\iordereditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\category\\updatecategoryrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\category\\updatecategoryrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\ordereditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\ordereditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\repository\\ordereditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:repository\\ordereditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\account\\staffregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\item\\updateitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\item\\updateitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\account\\signedindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,16 +119,8 @@
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\category\\createcategoryrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\category\\updatecategoryrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\category\\updatecategoryrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\category\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\category\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,20 +159,8 @@
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\order\\returnorderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\order\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\order\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\order\\createorderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\order\\createorderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\mappers\\ordermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,16 +171,8 @@
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:mappers\\ordereditemmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\repository\\ordereditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:repository\\ordereditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -152,26 +184,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\dtos\\ordereditem\\ordereditemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:dtos\\ordereditem\\ordereditemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\ordereditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\ordereditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\interfaces\\iordereditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:interfaces\\iordereditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -194,10 +206,6 @@
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:extensions\\claimsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|c:\\users\\obasi chukwuemeka\\desktop\\tech\\c#\\ecommerce\\ecommerce.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{96C05DCA-584E-4F0A-85BB-A5692E004CD6}|ECommerce.csproj|solutionrelative:ecommerce.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
@@ -209,7 +217,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -217,79 +225,198 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAUwDwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Services\\OrderService.cs",
+              "RelativeToolTip": "Services\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T19:44:22.463Z",
+              "WhenOpened": "2024-11-30T09:02:50.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T08:41:30.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\CategoryRepository.cs",
-              "RelativeToolTip": "Repository\\CategoryRepository.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAmwDwAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T20:56:58.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAcwF8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwFwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T09:06:10.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ItemMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\ItemMapper.cs",
-              "RelativeDocumentMoniker": "Mappers\\ItemMapper.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\ItemMapper.cs",
-              "RelativeToolTip": "Mappers\\ItemMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAwAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderRepository.cs",
+              "RelativeToolTip": "Interfaces\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T05:31:27.978Z"
+              "WhenOpened": "2024-10-12T09:18:21.06Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\OrderRepository.cs",
+              "RelativeToolTip": "Repository\\OrderRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T09:08:04.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAiwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T19:44:22.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAIwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T19:43:17.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\AppUser.cs",
+              "RelativeToolTip": "Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T18:45:43.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ItemController.cs",
               "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "Controllers\\ItemController.cs",
               "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\ItemController.cs",
               "RelativeToolTip": "Controllers\\ItemController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAA1wEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T09:14:25.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UpdateItemRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\UpdateItemRequestDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Item\\UpdateItemRequestDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\UpdateItemRequestDto.cs",
-              "RelativeToolTip": "DTOs\\Item\\UpdateItemRequestDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAsAAAASAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\OrderDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Order\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\OrderDto.cs",
+              "RelativeToolTip": "DTOs\\Order\\OrderDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T14:30:49.562Z"
+              "WhenOpened": "2024-10-12T12:20:31.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "Controllers\\RolesController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwE0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T19:44:56.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderedItem.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\OrderedItem.cs",
+              "RelativeDocumentMoniker": "Models\\OrderedItem.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\OrderedItem.cs",
+              "RelativeToolTip": "Models\\OrderedItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T08:41:57.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateCategoryRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\UpdateCategoryRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Category\\UpdateCategoryRequestDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\UpdateCategoryRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Category\\UpdateCategoryRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:29:24.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IOrderedItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderedItemRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IOrderedItemRepository.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderedItemRepository.cs",
+              "RelativeToolTip": "Interfaces\\IOrderedItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:41:18.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T18:42:50.011Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -301,421 +428,12 @@
               "RelativeToolTip": "Models\\Item.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T18:47:01.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SignedInDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\SignedInDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Account\\SignedInDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\SignedInDto.cs",
-              "RelativeToolTip": "DTOs\\Account\\SignedInDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:29:44.616Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAmwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T21:00:23.302Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowJAAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T19:43:17.701Z",
+              "WhenOpened": "2024-10-12T18:47:01.687Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\ItemRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\ItemRepository.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\ItemRepository.cs",
-              "RelativeToolTip": "Repository\\ItemRepository.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAowGgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T20:56:56.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ItemDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\ItemDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Item\\ItemDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\ItemDto.cs",
-              "RelativeToolTip": "DTOs\\Item\\ItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T20:42:52.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StaffRegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\StaffRegisterDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Account\\StaffRegisterDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\StaffRegisterDto.cs",
-              "RelativeToolTip": "DTOs\\Account\\StaffRegisterDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T22:43:27.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UpdateCategoryRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\UpdateCategoryRequestDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Category\\UpdateCategoryRequestDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\UpdateCategoryRequestDto.cs",
-              "RelativeToolTip": "DTOs\\Category\\UpdateCategoryRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:29:24.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CategoryDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\CategoryDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Category\\CategoryDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\CategoryDto.cs",
-              "RelativeToolTip": "DTOs\\Category\\CategoryDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:29:35.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateItemRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\CreateItemRequestDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Item\\CreateItemRequestDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\CreateItemRequestDto.cs",
-              "RelativeToolTip": "DTOs\\Item\\CreateItemRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T20:43:04.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateCategoryRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\CreateCategoryRequestDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Category\\CreateCategoryRequestDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\CreateCategoryRequestDto.cs",
-              "RelativeToolTip": "DTOs\\Category\\CreateCategoryRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:29:32.143Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\ICategoryRepository.cs",
-              "RelativeToolTip": "Interfaces\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T08:01:06.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "OrderList.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\OrderList.cs",
-              "RelativeDocumentMoniker": "DTOs\\Item\\OrderList.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\OrderList.cs",
-              "RelativeToolTip": "DTOs\\Item\\OrderList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:03:22.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SuperAdminRegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\SuperAdminRegisterDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Account\\SuperAdminRegisterDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\SuperAdminRegisterDto.cs",
-              "RelativeToolTip": "DTOs\\Account\\SuperAdminRegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:29:38.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "NewUserDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\NewUserDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Account\\NewUserDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\NewUserDto.cs",
-              "RelativeToolTip": "DTOs\\Account\\NewUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:29:47.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Data\\ApplicationDBContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDBContext.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Data\\ApplicationDBContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDBContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T21:00:10.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CustomerRegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\CustomerRegisterDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Account\\CustomerRegisterDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\CustomerRegisterDto.cs",
-              "RelativeToolTip": "DTOs\\Account\\CustomerRegisterDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:29:54.597Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CategoryMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\CategoryMapper.cs",
-              "RelativeDocumentMoniker": "Mappers\\CategoryMapper.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\CategoryMapper.cs",
-              "RelativeToolTip": "Mappers\\CategoryMapper.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwCAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T05:33:20.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\OrderRepository.cs",
-              "RelativeToolTip": "Repository\\OrderRepository.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAIwCgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T09:08:04.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CreateOrderRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\CreateOrderRequestDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Order\\CreateOrderRequestDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\CreateOrderRequestDto.cs",
-              "RelativeToolTip": "DTOs\\Order\\CreateOrderRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T12:50:13.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "OrderDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\OrderDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Order\\OrderDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\OrderDto.cs",
-              "RelativeToolTip": "DTOs\\Order\\OrderDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T12:20:31.062Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UpdateOrderRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\UpdateOrderRequestDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Order\\UpdateOrderRequestDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\UpdateOrderRequestDto.cs",
-              "RelativeToolTip": "DTOs\\Order\\UpdateOrderRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T06:42:52.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ReturnOrderRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\ReturnOrderRequestDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Order\\ReturnOrderRequestDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\ReturnOrderRequestDto.cs",
-              "RelativeToolTip": "DTOs\\Order\\ReturnOrderRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T12:50:07.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T18:42:50.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "OrderMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\OrderMapper.cs",
-              "RelativeDocumentMoniker": "Mappers\\OrderMapper.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\OrderMapper.cs",
-              "RelativeToolTip": "Mappers\\OrderMapper.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwDoAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T12:21:02.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "OrderedItemMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\OrderedItemMapper.cs",
-              "RelativeDocumentMoniker": "Mappers\\OrderedItemMapper.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\OrderedItemMapper.cs",
-              "RelativeToolTip": "Mappers\\OrderedItemMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:32:51.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IItemRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IItemRepository.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IItemRepository.cs",
-              "RelativeToolTip": "Interfaces\\IItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T08:01:04.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "OrderedItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\OrderedItemRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\OrderedItemRepository.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\OrderedItemRepository.cs",
-              "RelativeToolTip": "Repository\\OrderedItemRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:40:31.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "Controllers\\RolesController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAmwBoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T19:44:56.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\LoginDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\Account\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\LoginDto.cs",
-              "RelativeToolTip": "DTOs\\Account\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:29:51.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ReturnBorrowingRecordRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ModernLibrary\\DTOs\\BorrowingRecord\\ReturnBorrowingRecordRequestDto.cs",
-              "RelativeDocumentMoniker": "..\\ModernLibrary\\DTOs\\BorrowingRecord\\ReturnBorrowingRecordRequestDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ModernLibrary\\DTOs\\BorrowingRecord\\ReturnBorrowingRecordRequestDto.cs",
-              "RelativeToolTip": "..\\ModernLibrary\\DTOs\\BorrowingRecord\\ReturnBorrowingRecordRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T20:44:23.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "OrderedItemDto.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\OrderedItem\\OrderedItemDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\OrderedItem\\OrderedItemDto.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\OrderedItem\\OrderedItemDto.cs",
-              "RelativeToolTip": "DTOs\\OrderedItem\\OrderedItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:57:45.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IOrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IOrderRepository.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderRepository.cs",
-              "RelativeToolTip": "Interfaces\\IOrderRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T09:18:21.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "OrderedItem.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\OrderedItem.cs",
-              "RelativeDocumentMoniker": "Models\\OrderedItem.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\OrderedItem.cs",
-              "RelativeToolTip": "Models\\OrderedItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:41:57.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IOrderedItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderedItemRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IOrderedItemRepository.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IOrderedItemRepository.cs",
-              "RelativeToolTip": "Interfaces\\IOrderedItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:41:18.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
@@ -723,83 +441,73 @@
               "RelativeToolTip": "Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T18:46:52.771Z"
+              "WhenOpened": "2024-10-12T18:46:52.771Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "Models\\AppUser.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Models\\AppUser.cs",
-              "RelativeToolTip": "Models\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAmwGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T18:45:43.277Z"
+              "WhenOpened": "2024-10-13T21:00:23.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Services\\TokenService.cs",
-              "RelativeToolTip": "Services\\TokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "UpdateItemRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\UpdateItemRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Item\\UpdateItemRequestDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\UpdateItemRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Item\\UpdateItemRequestDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:26:56.394Z"
+              "WhenOpened": "2024-10-12T14:30:49.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\ITokenService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ITokenService.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\ITokenService.cs",
-              "RelativeToolTip": "Interfaces\\ITokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\CategoryRepository.cs",
+              "RelativeToolTip": "Repository\\CategoryRepository.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAmwDwAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T20:59:21.357Z"
+              "WhenOpened": "2024-10-13T20:56:58.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-15T11:16:55.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Bill.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Helpers\\Bill.cs",
-              "RelativeDocumentMoniker": "Helpers\\Bill.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Helpers\\Bill.cs",
-              "RelativeToolTip": "Helpers\\Bill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "ItemMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\ItemMapper.cs",
+              "RelativeDocumentMoniker": "Mappers\\ItemMapper.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\ItemMapper.cs",
+              "RelativeToolTip": "Mappers\\ItemMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:28:48.867Z"
+              "WhenOpened": "2024-10-13T05:31:27.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "ClaimsExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Extensions\\ClaimsExtensions.cs",
-              "RelativeDocumentMoniker": "Extensions\\ClaimsExtensions.cs",
-              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Extensions\\ClaimsExtensions.cs",
-              "RelativeToolTip": "Extensions\\ClaimsExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "OrderedItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\OrderedItemRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\OrderedItemRepository.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\OrderedItemRepository.cs",
+              "RelativeToolTip": "Repository\\OrderedItemRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T08:06:25.257Z"
+              "WhenOpened": "2024-10-21T09:40:31.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 19,
               "Title": "QueryObject.cs",
               "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Helpers\\QueryObject.cs",
               "RelativeDocumentMoniker": "Helpers\\QueryObject.cs",
@@ -811,7 +519,343 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\ItemRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ItemRepository.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Repository\\ItemRepository.cs",
+              "RelativeToolTip": "Repository\\ItemRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowEEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T20:56:56.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SignedInDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\SignedInDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Account\\SignedInDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\SignedInDto.cs",
+              "RelativeToolTip": "DTOs\\Account\\SignedInDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:29:44.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\ItemDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Item\\ItemDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\ItemDto.cs",
+              "RelativeToolTip": "DTOs\\Item\\ItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T20:42:52.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "StaffRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\StaffRegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Account\\StaffRegisterDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\StaffRegisterDto.cs",
+              "RelativeToolTip": "DTOs\\Account\\StaffRegisterDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T22:43:27.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\CategoryDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Category\\CategoryDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\CategoryDto.cs",
+              "RelativeToolTip": "DTOs\\Category\\CategoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:29:35.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CreateItemRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\CreateItemRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Item\\CreateItemRequestDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\CreateItemRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Item\\CreateItemRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T20:43:04.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CreateCategoryRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\CreateCategoryRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Category\\CreateCategoryRequestDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Category\\CreateCategoryRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Category\\CreateCategoryRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:29:32.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T08:01:06.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OrderList.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\OrderList.cs",
+              "RelativeDocumentMoniker": "DTOs\\Item\\OrderList.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Item\\OrderList.cs",
+              "RelativeToolTip": "DTOs\\Item\\OrderList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:03:22.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SuperAdminRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\SuperAdminRegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Account\\SuperAdminRegisterDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\SuperAdminRegisterDto.cs",
+              "RelativeToolTip": "DTOs\\Account\\SuperAdminRegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:29:38.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "NewUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\NewUserDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Account\\NewUserDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\NewUserDto.cs",
+              "RelativeToolTip": "DTOs\\Account\\NewUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:29:47.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Data\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Data\\ApplicationDBContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDBContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T21:00:10.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CustomerRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\CustomerRegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Account\\CustomerRegisterDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\CustomerRegisterDto.cs",
+              "RelativeToolTip": "DTOs\\Account\\CustomerRegisterDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:29:54.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CategoryMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\CategoryMapper.cs",
+              "RelativeDocumentMoniker": "Mappers\\CategoryMapper.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\CategoryMapper.cs",
+              "RelativeToolTip": "Mappers\\CategoryMapper.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwCAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T05:33:20.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CreateOrderRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\CreateOrderRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Order\\CreateOrderRequestDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\CreateOrderRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Order\\CreateOrderRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T12:50:13.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UpdateOrderRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\UpdateOrderRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Order\\UpdateOrderRequestDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\UpdateOrderRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Order\\UpdateOrderRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T06:42:52.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ReturnOrderRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\ReturnOrderRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Order\\ReturnOrderRequestDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Order\\ReturnOrderRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Order\\ReturnOrderRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T12:50:07.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "OrderMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\OrderMapper.cs",
+              "RelativeDocumentMoniker": "Mappers\\OrderMapper.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\OrderMapper.cs",
+              "RelativeToolTip": "Mappers\\OrderMapper.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T12:21:02.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "OrderedItemMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\OrderedItemMapper.cs",
+              "RelativeDocumentMoniker": "Mappers\\OrderedItemMapper.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Mappers\\OrderedItemMapper.cs",
+              "RelativeToolTip": "Mappers\\OrderedItemMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:32:51.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IItemRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IItemRepository.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\IItemRepository.cs",
+              "RelativeToolTip": "Interfaces\\IItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T08:01:04.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\LoginDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Account\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\Account\\LoginDto.cs",
+              "RelativeToolTip": "DTOs\\Account\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:29:51.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ReturnBorrowingRecordRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ModernLibrary\\DTOs\\BorrowingRecord\\ReturnBorrowingRecordRequestDto.cs",
+              "RelativeDocumentMoniker": "..\\ModernLibrary\\DTOs\\BorrowingRecord\\ReturnBorrowingRecordRequestDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ModernLibrary\\DTOs\\BorrowingRecord\\ReturnBorrowingRecordRequestDto.cs",
+              "RelativeToolTip": "..\\ModernLibrary\\DTOs\\BorrowingRecord\\ReturnBorrowingRecordRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:44:23.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "OrderedItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\OrderedItem\\OrderedItemDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\OrderedItem\\OrderedItemDto.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\DTOs\\OrderedItem\\OrderedItemDto.cs",
+              "RelativeToolTip": "DTOs\\OrderedItem\\OrderedItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T08:57:45.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Services\\TokenService.cs",
+              "RelativeToolTip": "Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:26:56.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "Interfaces\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T20:59:21.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-15T11:16:55.515Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 49,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Helpers\\Bill.cs",
+              "RelativeDocumentMoniker": "Helpers\\Bill.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Helpers\\Bill.cs",
+              "RelativeToolTip": "Helpers\\Bill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:28:48.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ClaimsExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Extensions\\ClaimsExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\ClaimsExtensions.cs",
+              "ToolTip": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\Extensions\\ClaimsExtensions.cs",
+              "RelativeToolTip": "Extensions\\ClaimsExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T08:06:25.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
               "Title": "ECommerce.http",
               "DocumentMoniker": "C:\\Users\\Obasi Chukwuemeka\\Desktop\\Tech\\C#\\ECommerce\\ECommerce.http",
               "RelativeDocumentMoniker": "ECommerce.http",

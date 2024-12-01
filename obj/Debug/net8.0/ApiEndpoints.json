@@ -293,7 +293,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -312,8 +312,8 @@
   },
   {
     "ContainingType": "ECommerce.Controllers.OrderController",
-    "Method": "GetUserOrders",
-    "RelativePath": "api/Orders/getUserOrders",
+    "Method": "GetAllUserOrders",
+    "RelativePath": "api/Orders/getAllUserOrders",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -329,7 +329,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -338,19 +338,19 @@
   },
   {
     "ContainingType": "ECommerce.Controllers.RolesController",
-    "Method": "AddRoleToUser",
-    "RelativePath": "api/Roles/addRoleToExistingUser",
+    "Method": "AssignRole",
+    "RelativePath": "api/Roles/assignRole",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "UserName",
+        "Name": "userId",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "roleName",
+        "Name": "role",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -366,7 +366,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "UserName",
+        "Name": "userId",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -375,19 +375,19 @@
   },
   {
     "ContainingType": "ECommerce.Controllers.RolesController",
-    "Method": "RemoveRoleFromUser",
-    "RelativePath": "api/Roles/removeRoleFromExistingUser",
+    "Method": "RemoveRole",
+    "RelativePath": "api/Roles/removeRole",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "UserName",
+        "Name": "userId",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "roleName",
+        "Name": "role",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -397,7 +397,7 @@
   {
     "ContainingType": "ECommerce.Controllers.RolesController",
     "Method": "GetAllRoles",
-    "RelativePath": "api/Roles/rhowAllUserRoles",
+    "RelativePath": "api/Roles/showAllRoles",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

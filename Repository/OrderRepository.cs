@@ -23,9 +23,9 @@ namespace ECommerce.Repository
 
         }
 
-        public async Task<Order> ReturnOrderAsync(AppUser appUser, int Id)
+        public async Task<Order> ReturnOrderAsync(AppUser appUser, int id)
         {
-            var orderModel = await _context.Orders.FirstOrDefaultAsync(x => x.OrderId == Id);
+            var orderModel = await _context.Orders.FirstOrDefaultAsync(x => x.OrderId == id);
 
             if (orderModel == null)
             {
@@ -40,19 +40,19 @@ namespace ECommerce.Repository
             return orderModel;
         }
 
-        public async Task<Order?> GetOrderById(AppUser appUser, int id)
+        public async Task<Order?> GetOrderByIdAsync(AppUser appUser, int id)
         {
             return await _context.Orders.Include(i => i.OrderedItems).FirstOrDefaultAsync(c => c.AppUserId == appUser.Id && c.OrderId == id && !c.IsReturned && !c.IsCancelled);
         }
 
-        public async Task<List<Order>> GetUserOrder(AppUser user)
+        public async Task<List<Order>> GetAllUserOrdersAsync(AppUser user)
         {
             return await _context.Orders.Include(i => i.OrderedItems).Where(o => o.AppUserId == user.Id && !o.IsReturned && !o.IsCancelled).ToListAsync();
         }
 
-        public async Task<Order> CancelOrderAsync(AppUser appUser, int Id)
+        public async Task<Order> CancelOrderAsync(AppUser appUser, int id)
         {
-            var orderModel = await _context.Orders.FirstOrDefaultAsync(x => x.OrderId == Id);
+            var orderModel = await _context.Orders.FirstOrDefaultAsync(x => x.OrderId == id);
 
             if (orderModel == null)
             {
@@ -67,7 +67,7 @@ namespace ECommerce.Repository
             return orderModel;
         }
 
-        public async Task<List<Order>> GetAllOrders()
+        public async Task<List<Order>> GetAllOrdersAsync()
         {
             return await _context.Orders.Include(o => o.AppUser).Include(o => o.OrderedItems).ToListAsync();
         }

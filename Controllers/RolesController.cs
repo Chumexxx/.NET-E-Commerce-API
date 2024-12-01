@@ -24,74 +24,91 @@ namespace ECommerce.Controllers
             _roleManager = roleManager;
         }
 
-        [HttpGet("getUserRole")]
+        [HttpPost("assignRole")]
         [Authorize(Roles = "SuperAdmin")]
-        public async Task<IActionResult> GetUserRoles(string UserName)
+        public async Task<IActionResult> AssignRole(string userId, string role)
         {
-            var userName = await _userManager.FindByNameAsync(UserName);
-            if (userName == null)
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
             {
                 return NotFound("User not found");
             }
 
-            var roles = await _userManager.GetRolesAsync(userName);
+            var isStaff = await _userManager.IsInRoleAsync(user, "Staff");
+            if (!isStaff)
+            {
+                return BadRequest(new
+                {
+                    Message = "Role can only be assigned to Staff members. This user is not a Staff member."
+                });
+            }
+
+            if (!await _roleManager.RoleExistsAsync(role))
+            {
+                return BadRequest("Role does not exist");
+            }
+
+            var result = await _userManager.AddToRoleAsync(user, role);
+            if (result.Succeeded)
+            {
+                return Ok($"Role {role} assigned to staff member {user.UserName}");
+            }
+
+            return BadRequest("Failed to assign role");
+        }
+
+        [HttpPost("removeRole")]
+        [Authorize(Roles = "SuperAdmin")]
+        public async Task<IActionResult> RemoveRole(string userId, string role)
+        {
+            if (!await _roleManager.RoleExistsAsync(role))
+            {
+                return BadRequest($"Role {role} does not exist");
+            }
+
+            if (role.Equals("Customer", StringComparison.OrdinalIgnoreCase))
+            {
+                return BadRequest(new
+                {
+                    Message = "Cannot remove Customer role as it is a default user role."
+                });
+            }
+
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound("User not found");
+            }
+
+            var result = await _userManager.RemoveFromRoleAsync(user, role);
+            if (result.Succeeded)
+            {
+                return Ok($"Role {role} successfully removed from user {user.UserName}");
+            }
+
+            return BadRequest("Failed to remove role");
+        }
+
+        [HttpGet("getUserRole")]
+        [Authorize(Roles = "SuperAdmin")]
+        public async Task<IActionResult> GetUserRoles(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound("User not found");
+            }
+
+            var roles = await _userManager.GetRolesAsync(user);
             return Ok(roles);
         }
 
-        [HttpGet("rhowAllUserRoles")]
+        [HttpGet("showAllRoles")]
         [Authorize(Roles = "SuperAdmin")]
         public IActionResult GetAllRoles()
         {
             var roles = _roleManager.Roles;
             return Ok(roles);
-        }
-
-        [HttpPost("addRoleToExistingUser")]
-        [Authorize(Roles = "SuperAdmin")]
-        public async Task<IActionResult> AddRoleToUser(string UserName, string roleName)
-        {
-            if (!await _roleManager.RoleExistsAsync(roleName))
-            {
-                return BadRequest($"Role {roleName} does not exist");
-            }
-
-            var userName = await _userManager.FindByNameAsync(UserName);
-            if (userName == null)
-            {
-                return NotFound("User not found");
-            }
-
-            var result = await _userManager.AddToRoleAsync(userName, roleName);
-            if (result.Succeeded)
-            {
-                return Ok($"Role {roleName} successfully added to user {userName.UserName}");
-            }
-
-            return BadRequest("Failed to add role");
-        }
-
-        [HttpPost("removeRoleFromExistingUser")]
-        [Authorize(Roles = "SuperAdmin")]
-        public async Task<IActionResult> RemoveRoleFromUser(string UserName, string roleName)
-        {
-            if (!await _roleManager.RoleExistsAsync(roleName))
-            {
-                return BadRequest($"Role {roleName} does not exist");
-            }
-
-            var userName = await _userManager.FindByNameAsync(UserName);
-            if (userName == null)
-            {
-                return NotFound("User not found");
-            }
-
-            var result = await _userManager.RemoveFromRoleAsync(userName, roleName);
-            if (result.Succeeded)
-            {
-                return Ok($"Role {roleName} successfully removed from user {userName.UserName}");
-            }
-
-            return BadRequest("Failed to remove role");
         }
     }
 }

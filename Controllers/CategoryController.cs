@@ -74,9 +74,6 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> UpdateCategory([FromRoute] int id, [FromBody] UpdateCategoryRequestDto updateDto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var category = await _categoryRepo.GetByIdAsync(id);
 
             if (category == null)
@@ -99,9 +96,6 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> DeleteCategory([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var categoryModel = await _categoryRepo.DeleteByIdAsync(id);
 
             if (categoryModel == null)

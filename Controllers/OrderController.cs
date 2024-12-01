@@ -20,15 +20,15 @@ namespace ECommerce.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly IItemRepository _itemRepo;
-        private readonly IOrderRepository _orderRepo;
         private readonly IOrderedItemRepository _orderedItemRepo;
+        private readonly IOrderService _orderService;
         private readonly ApplicationDBContext _context;
-        public OrderController(UserManager<AppUser> userManager, IItemRepository itemRepo, IOrderRepository orderRepo,
+        public OrderController(UserManager<AppUser> userManager, IItemRepository itemRepo, IOrderService orderService,
             IOrderedItemRepository orderedItemRepo, ApplicationDBContext context)
         {
             _userManager = userManager;
             _itemRepo = itemRepo;
-            _orderRepo = orderRepo;
+            _orderService = orderService;
             _orderedItemRepo = orderedItemRepo;
             _context = context;
         }
@@ -37,58 +37,28 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> GetAllOrders()
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var orders = await _orderRepo.GetAllOrders();
-
-            var orderDto = orders.Select(s => s.ToOrderDto());
-
-            return Ok(orderDto);
+            var allOrders = await _orderService.GetAllOrdersAsync();
+            return Ok(allOrders);
         }
 
 
-        [HttpGet("getUserOrders")]
+        [HttpGet("getAllUserOrders")]
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
-        public async Task<IActionResult> GetUserOrders()
+        public async Task<IActionResult> GetAllUserOrders()
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var username = User.GetUsername();
-            var appUser = await _userManager.FindByNameAsync(username);
-
-
-            var orders = await _orderRepo.GetUserOrder(appUser);
-
-            var orderDto = orders.Select(s => s.ToOrderDto());
-
-            return Ok(orderDto);
+            var userOrders = await _orderService.GetAllUserOrdersAsync(username);
+            return Ok(userOrders);
         }
 
         [HttpGet("{id:int}")]
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
         public async Task<IActionResult> GetOrderById([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var username = User.GetUsername();
-
-            var appUser = await _userManager.FindByNameAsync(username);
-            if (appUser == null)
-                return NotFound("User not found");
-
-            var userOrder = await _orderRepo.GetOrderById(appUser, id);
-
-            if (userOrder == null)
-                return NotFound($"No order found for the user with ID {id}");
-
-
-            return Ok(userOrder.ToOrderDto());
-
+            var order = await _orderService.GetOrderByIdAsync(username, id);
+            return Ok(order);
         }
-
 
         [HttpPost("addOrder")]
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
@@ -98,193 +68,28 @@ namespace ECommerce.Controllers
                 return BadRequest(ModelState);
 
             var username = User.GetUsername();
-            var appUser = await _userManager.FindByNameAsync(username);
-
-            if (appUser == null)
-                return NotFound("User not found");
-
-            var orderedItems = new List<OrderedItem>();
-            decimal orderBill = 0;
-            var errorMessages = new List<string>();
-
-            // Begin transaction
-            var transaction = await _context.Database.BeginTransactionAsync();
-
-            try
-            {
-                foreach (var checkedItem in orderDto.Items)
-                {
-                    var item = await _itemRepo.GetByIdAsync(checkedItem.ItemId);
-
-                    if (item == null)
-                    {
-                        await transaction.RollbackAsync();
-                        return BadRequest(new
-                        {
-                            Message = $"Item with ID {checkedItem.ItemId} does not exist.",
-                        });
-                    }
-
-                    item.QuantityInStock -= checkedItem.QtyNeeded;
-
-                    if (checkedItem.QtyNeeded <= 0)
-                    {
-                        await transaction.RollbackAsync();
-                        return BadRequest(new
-                        {
-                            Message = $"Quantity for item with ID {checkedItem.ItemId} must be at least 1.",
-                        });
-                    }
-
-                    if (checkedItem.QtyNeeded > item.QuantityInStock)
-                    {
-                        await transaction.RollbackAsync();
-                        return BadRequest(new
-                        {
-                            Message = $"Item with ID {checkedItem.ItemId} is out of stock. Only {item.QuantityInStock} units available.",
-                        });
-                    }
-
-                    var itemDto = new UpdateItemRequestDto
-                    {
-                        QuantityInStock = item.QuantityInStock,
-                        Description = item.Description,
-                        Store = item.Store,
-                        UnitPrice = item.UnitPrice,
-                    };
-
-                    await _itemRepo.UpdateAsync(item.ItemId, itemDto);
-
-                    var itemBill = item.UnitPrice * checkedItem.QtyNeeded;
-                    orderBill += itemBill;
-
-                    var orderedItem = new OrderedItem
-                    {
-                        Bill = itemBill,
-                        ItemName = item.ItemName,
-                        ItemId = item.ItemId,
-                        QtyNeeded = checkedItem.QtyNeeded,
-                    };
-
-                    orderedItems.Add(orderedItem);
-                }
-
-                // Create the order model
-                var orderModel = new Order
-                {
-                    AppUserId = appUser.Id,
-                    TotalBill = orderBill,
-                    OrderedBy = appUser.UserName,
-                    OrderedItems = orderedItems,
-                    ShippingAddress = orderDto.ShippingAddress,
-                    PaymentMethod = orderDto.PaymentMethod
-                };
-
-                await _orderRepo.CreateOrderAsync(orderModel);
-
-                // Commit transaction
-                await transaction.CommitAsync();
-                return Ok("Order placed successfully");
-            }
-            catch (Exception)
-            {
-                // If any exception occurs, rollback the transaction
-                await transaction.RollbackAsync();
-                return StatusCode(500, "An error occurred while placing the order.");
-            }
+            var createOrder = await _orderService.CreateOrderAsync(username, orderDto);
+            return Ok(createOrder);
         }
 
 
         [HttpPut("returnOrder")]
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
-        public async Task<IActionResult> ReturnOrder(int Id)
+        public async Task<IActionResult> ReturnOrder(int id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var username = User.GetUsername();
-            var appUser = await _userManager.FindByNameAsync(username);
-
-            var order = await _orderRepo.GetOrderById(appUser, Id);
-
-            if (order == null)
-                return NotFound("Order not found");
-
-            if (order.IsReturned)
-                return BadRequest("Order has already been returned");
-
-            if (order.IsCancelled)
-                return BadRequest("Cannot return an order that has already been cancelled. Kindly verify your OrderId");
-
-            await _orderRepo.ReturnOrderAsync(appUser, Id);
-
-            foreach (var orderedItem in order.OrderedItems)
-            {
-                var item = await _itemRepo.GetByIdAsync(orderedItem.ItemId);
-
-                if (item == null)
-                    return BadRequest($"Item with ID {orderedItem.ItemId} not found");
-
-                item.QuantityInStock += orderedItem.QtyNeeded;
-
-                var itemDto = new UpdateItemRequestDto
-                {
-                    QuantityInStock = item.QuantityInStock,
-                    Description = item.Description,
-                    UnitPrice = item.UnitPrice,
-                };
-
-                await _itemRepo.UpdateAsync(item.ItemId, itemDto);
-            }
-
-            return Ok(new { message = "Order successfully returned" });
+            var returnItem = await _orderService.ReturnOrderAsync(username, id);
+            return Ok(returnItem);
         }
 
         [HttpPut("cancelOrder")]
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
-        public async Task<IActionResult> CancelOrder(int Id)
+        public async Task<IActionResult> CancelOrder(int id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var username = User.GetUsername();
-            var appUser = await _userManager.FindByNameAsync(username);
-
-            var order = await _orderRepo.GetOrderById(appUser, Id);
-
-            if (order == null)
-                return NotFound("Order not found");
-
-            if (order.IsCancelled)
-                return BadRequest("Order is already cancelled");
-
-            if (order.IsReturned)
-                return BadRequest("Cannot cancel an order that has already been returned. Kindly verify your OrderId");
-
-            await _orderRepo.CancelOrderAsync(appUser, Id);
-
-            foreach (var orderedItem in order.OrderedItems)
-            {
-                var item = await _itemRepo.GetByIdAsync(orderedItem.ItemId);
-
-                if (item == null)
-                    return BadRequest($"Item with ID {orderedItem.ItemId} not found");
-
-                item.QuantityInStock += orderedItem.QtyNeeded;
-
-                var itemDto = new UpdateItemRequestDto
-                {
-                    QuantityInStock = item.QuantityInStock,
-                    Description = item.Description,
-                    UnitPrice = item.UnitPrice,
-                };
-
-                await _itemRepo.UpdateAsync(item.ItemId, itemDto);
-            }
-
-            return Ok(new { message = "Order successfully cancelled" });
+            var cancelOrder = await _orderService.CancelOrderAsync(username, id);
+            return Ok(cancelOrder);
         }
-
     }
 }
 
