@@ -1,7 +1,7 @@
 ﻿using ECommerce.Data;
 using ECommerce.DTOs.Item;
 using ECommerce.Helpers;
-using ECommerce.Interfaces;
+using ECommerce.Interfaces.Repository;
 using ECommerce.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +14,7 @@ namespace ECommerce.Repository
         {
             _context = context;
         }
-        public async Task<Item> CreateAsync(Item itemModel)
+        public async Task<Item> CreateItemAsync(Item itemModel)
         {
             var existingitem = await _context.Items.FirstOrDefaultAsync(x => x.ItemName == itemModel.ItemName);
 
@@ -35,7 +35,7 @@ namespace ECommerce.Repository
 
         }
 
-        public async Task<Item?> DeleteAsync(int id)
+        public async Task<Item?> DeleteItemAsync(int id)
         {
             var itemModel = await _context.Items.FirstOrDefaultAsync(x => x.ItemId == id);
 
@@ -51,7 +51,7 @@ namespace ECommerce.Repository
 
         }
 
-        public async Task<List<Item>> GetAllAsync(QueryObject query)
+        public async Task<List<Item>> GetAllItemsAsync(QueryObject query)
         {
             var items = _context.Items.AsQueryable();
 
@@ -78,12 +78,12 @@ namespace ECommerce.Repository
             return await items.Skip(skipNumber).Take(query.PageSize).ToListAsync();
         }
 
-        public async Task<Item?> GetByIdAsync(int id)
+        public async Task<Item?> GetItemByIdAsync(int id)
         {
             return await _context.Items.FirstOrDefaultAsync(i => i.ItemId == id);
         }
 
-        public async Task<Item?> GetByNameAsync(string itemName)
+        public async Task<Item?> GetItemByNameAsync(string itemName)
         {
             return await _context.Items.FirstOrDefaultAsync(i => i.ItemName == itemName);
         }
@@ -94,7 +94,7 @@ namespace ECommerce.Repository
         }
 
 
-        public async Task<Item?> UpdateAsync(int id, UpdateItemRequestDto itemDto)
+        public async Task<Item?> UpdateItemAsync(int id, UpdateItemRequestDto itemDto)
         {
             var existingItem = await _context.Items.FirstOrDefaultAsync(x => x.ItemId == id);
 

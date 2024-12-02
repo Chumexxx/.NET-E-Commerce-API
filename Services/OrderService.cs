@@ -1,7 +1,8 @@
 ﻿using ECommerce.Data;
 using ECommerce.DTOs.Item;
 using ECommerce.DTOs.Order;
-using ECommerce.Interfaces;
+using ECommerce.Interfaces.Repository;
+using ECommerce.Interfaces.Service;
 using ECommerce.Mappers;
 using ECommerce.Models;
 using Microsoft.AspNetCore.Identity;
@@ -12,15 +13,13 @@ namespace ECommerce.Services
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly IOrderRepository _orderRepo;
-        private readonly IOrderedItemRepository _orderedItemRepo;
         private readonly IItemRepository _itemRepo;
         private readonly ApplicationDBContext _context;
 
-        public OrderService(UserManager<AppUser> userManager, IOrderRepository orderRepo, IOrderedItemRepository orderedItemRepo, IItemRepository itemRepo,
+        public OrderService(UserManager<AppUser> userManager, IOrderRepository orderRepo, IItemRepository itemRepo,
             ApplicationDBContext context)
         {
             _userManager = userManager;
-            _orderedItemRepo = orderedItemRepo;
             _orderRepo = orderRepo;
             _itemRepo = itemRepo;
             _context = context;
@@ -46,7 +45,7 @@ namespace ECommerce.Services
 
             foreach (var orderedItem in order.OrderedItems)
             {
-                var item = await _itemRepo.GetByIdAsync(orderedItem.ItemId);
+                var item = await _itemRepo.GetItemByIdAsync(orderedItem.ItemId);
 
                 if (item == null)
                     return ($"Item with ID {orderedItem.ItemId} not found");
@@ -60,7 +59,7 @@ namespace ECommerce.Services
                     UnitPrice = item.UnitPrice,
                 };
 
-                await _itemRepo.UpdateAsync(item.ItemId, itemDto);
+                await _itemRepo.UpdateItemAsync(item.ItemId, itemDto);
             }
 
             return (new { message = "Order successfully cancelled" });
@@ -78,14 +77,13 @@ namespace ECommerce.Services
             decimal orderBill = 0;
             var errorMessages = new List<string>();
 
-            // Begin transaction
             var transaction = await _context.Database.BeginTransactionAsync();
 
             try
             {
                 foreach (var checkedItem in orderDto.Items)
                 {
-                    var item = await _itemRepo.GetByIdAsync(checkedItem.ItemId);
+                    var item = await _itemRepo.GetItemByIdAsync(checkedItem.ItemId);
 
                     if (item == null)
                     {
@@ -124,7 +122,7 @@ namespace ECommerce.Services
                         UnitPrice = item.UnitPrice,
                     };
 
-                    await _itemRepo.UpdateAsync(item.ItemId, itemDto);
+                    await _itemRepo.UpdateItemAsync(item.ItemId, itemDto);
 
                     var itemBill = item.UnitPrice * checkedItem.QtyNeeded;
                     orderBill += itemBill;
@@ -157,7 +155,6 @@ namespace ECommerce.Services
             }
             catch (Exception)
             {
-                // If any exception occurs, rollback the transaction
                 await transaction.RollbackAsync();
                 return (500, "An error occurred while placing the order.");
             }
@@ -212,7 +209,7 @@ namespace ECommerce.Services
 
             foreach (var orderedItem in order.OrderedItems)
             {
-                var item = await _itemRepo.GetByIdAsync(orderedItem.ItemId);
+                var item = await _itemRepo.GetItemByIdAsync(orderedItem.ItemId);
 
                 if (item == null)
                     return ($"Item with ID {orderedItem.ItemId} not found");
@@ -226,7 +223,7 @@ namespace ECommerce.Services
                     UnitPrice = item.UnitPrice,
                 };
 
-                await _itemRepo.UpdateAsync(item.ItemId, itemDto);
+                await _itemRepo.UpdateItemAsync(item.ItemId, itemDto);
             }
 
             return (new { message = "Order successfully returned" });

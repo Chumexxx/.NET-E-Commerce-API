@@ -2,8 +2,11 @@
 using ECommerce.DTOs.Category;
 using ECommerce.DTOs.Item;
 using ECommerce.Helpers;
-using ECommerce.Interfaces;
+using ECommerce.Interfaces.Repository;
+using ECommerce.Interfaces.Service;
 using ECommerce.Mappers;
+using ECommerce.Models;
+using ECommerce.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -16,78 +19,86 @@ namespace ECommerce.Controllers
     public class ItemController : ControllerBase
     {
         private readonly ApplicationDBContext _context;
-        private readonly IItemRepository _itemRepo;
-        public ItemController(ApplicationDBContext context, IItemRepository itemRepo)
+        private readonly IItemService _itemService;
+        public ItemController(ApplicationDBContext context, IItemService itemService)
         {
             _context = context;
-            _itemRepo = itemRepo;
+            _itemService = itemService;
         }
 
-        [HttpGet]
+        [HttpGet("getAllItems")]
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
         public async Task<IActionResult> GetAllItems([FromQuery] QueryObject query)
         {
-            var items = await _itemRepo.GetAllAsync(query);
-
-            var itemDto = items.Select(p => p.ToItemDto()).ToList();
-
-            return Ok(itemDto);
+            try
+            {
+                var items = await _itemService.GetAllItemsAsync(query);
+                Console.WriteLine("user called the get all items endpoint");
+                return Ok(items);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet("{id:int}")]
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
-        public async Task<IActionResult> GetItemById([FromRoute] int id)
+        public async Task<IActionResult> GetByItemId([FromRoute] int id)
         {
-            var item = await _itemRepo.GetByIdAsync(id);
-
-            if (item == null)
+            try
             {
-                return NotFound();
+                var item = await _itemService.GetItemByIdAsync(id);
+                Console.WriteLine("user called the get item by id endpoint");
+                return Ok(item);
             }
-
-            return Ok(item.ToItemDto());
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest(ex.Message);
+            }
         }
 
-        [HttpPost]
-        [Authorize(Roles = "SuperAdmin, Admin")]
-        public async Task<IActionResult> CreateItem([FromBody] Items itemDto)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+        //[HttpPost("createItem")]
+        //[Authorize(Roles = "SuperAdmin, Admin")]
+        //public async Task<IActionResult> CreateItem([FromBody] Items itemDto)
+        //{
+        //    try
+        //    {
+        //        if (!ModelState.IsValid)
+        //            return BadRequest(ModelState);
 
-            var item = await _itemRepo.GetByNameAsync(itemDto.ItemName);
-
-            if (item != null)
-            {
-                return BadRequest("This item already exists");
-            }
-
-            var itemModel = itemDto.ToItemFromCreateDto();
-
-            itemModel.CreatedOn = DateTime.Now;
-
-            await _itemRepo.CreateAsync(itemModel);
-
-            return CreatedAtAction(nameof(CreateItem), new { id = itemModel.ItemId }, itemModel.ToItemDto());
-
-        }
+        //        var createdItem = await _itemService.CreateItemAsync(itemDto);
+        //        Console.WriteLine("user called the create item endpoint");
+        //        return CreatedAtAction(nameof(GetItemById), new { id = createdItem.ItemId }, createdItem);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //        return BadRequest(ex.Message);
+        //    }
+        //}
 
         [HttpPut]
         [Route("{id:int}")]
         [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> UpdateItem([FromRoute] int id, [FromBody] UpdateItemRequestDto updateDto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var itemModel = await _itemRepo.UpdateAsync(id, updateDto);
-
-            if (itemModel == null)
+            try
             {
-                return NotFound("Item does not exist");
-            }
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            return Ok(itemModel.ToItemDto());
+                var updatedItem = await _itemService.UpdateItemAsync(id, updateDto);
+                Console.WriteLine("user called the update item endpoint");
+                return Ok(updatedItem);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpDelete]
@@ -95,14 +106,17 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> DeleteItem([FromRoute] int id)
         {
-            var itemModel = await _itemRepo.DeleteAsync(id);
-
-            if (itemModel == null)
+            try
             {
-                return NotFound("Item does not exist");
+                var deletedItem = await _itemService.DeleteItemAsync(id);
+                Console.WriteLine("user called the delete item endpoint");
+                return Ok(deletedItem);
             }
-
-            return Ok(new { message = "Item had been deleted successfully" });
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using ECommerce.DTOs.Order;
 using ECommerce.Models;
 
-namespace ECommerce.Interfaces
+namespace ECommerce.Interfaces.Repository
 {
     public interface IOrderedItemRepository
     {

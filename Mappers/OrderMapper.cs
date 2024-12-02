@@ -22,18 +22,6 @@ namespace ECommerce.Mappers
                 OrderDate = orderModel.OrderDate,
                 TotalBill = orderModel.TotalBill,
                 OrderedItems = orderModel.OrderedItems.Select(i => i.ToOrderedItemDto()).ToList()
-
-                //    OrderId = orderModel.OrderId,
-                //    OrderedBy = orderModel.AppUser?.UserName ?? "Unknown User",         // Safely access AppUser
-                //    ShippingAddress = orderModel.AppUser?.HomeAddress ?? "Unknown Address", // Safely access AppUser's address
-                //    PaymentMethod = orderModel.PaymentMethod,
-                //    IsReturned = orderModel.IsReturned,
-                //    IsCancelled = orderModel.IsCancelled,
-                //    OrderDate = orderModel.OrderDate,
-                //    TotalBill = orderModel.TotalBill,
-                //    OrderedItems = orderModel.OrderedItems != null
-                //? orderModel.OrderedItems.Select(i => i.ToOrderedItemDto()).ToList()
-                //: new List<OrderedItemDto>() // Handle potential null for OrderedItems
             };
 
         }
@@ -47,16 +35,6 @@ namespace ECommerce.Mappers
                 OrderedItems = new List<OrderedItem>(),
             };
         }
-
-        //public static Order ToOrderFromReturnDto(this ReturnOrderRequestDto orderDto)
-        //{
-        //    return new Order
-        //    {
-        //        IsReturned = true,
-        //        ReturnDate = DateTime.Now
-        //    };
-
-        //}
 
     }
 }

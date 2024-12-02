@@ -1,6 +1,6 @@
 ﻿using ECommerce.Data;
 using ECommerce.DTOs.Category;
-using ECommerce.Interfaces;
+using ECommerce.Interfaces.Repository;
 using ECommerce.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,7 +18,7 @@ namespace ECommerce.Repository
             return await _context.Categories.AnyAsync(i => i.CategoryId == id);
         }
 
-        public async Task<Category> CreateAsync(Category categoryModel)
+        public async Task<Category> CreateCategoryAsync(Category categoryModel)
         {
             var existingCategory = await _context.Categories.FirstOrDefaultAsync(x => x.CategoryName == categoryModel.CategoryName);
 
@@ -32,7 +32,7 @@ namespace ECommerce.Repository
             return categoryModel;
         }
 
-        public async Task<Category?> DeleteByIdAsync(int id)
+        public async Task<Category?> DeleteCategoryAsync(int id)
         {
             var categoryModel = await _context.Categories.FirstOrDefaultAsync(x => x.CategoryId == id);
 
@@ -46,22 +46,22 @@ namespace ECommerce.Repository
             return categoryModel;
         }
 
-        public async Task<List<Category>> GetAllAsync()
+        public async Task<List<Category>> GetAllCategoriesAsync()
         {
             return await _context.Categories.Include(p => p.Item).ToListAsync();
         }
 
-        public async Task<Category?> GetByIdAsync(int id)
+        public async Task<Category?> GetCategoryByIdAsync(int id)
         {
             return await _context.Categories.Include(i => i.Item).FirstOrDefaultAsync(c => c.CategoryId == id);
         }
 
-        public async Task<Category?> GetByNameAsync(string categoryName)
+        public async Task<Category?> GetCategoryByNameAsync(string categoryName)
         {
             return await _context.Categories.FirstOrDefaultAsync(t => t.CategoryName == categoryName);
         }
 
-        public async Task<Category?> UpdateAsync(int id, UpdateCategoryRequestDto categoryDto)
+        public async Task<Category?> UpdateCategoryAsync(int id, UpdateCategoryRequestDto categoryDto)
         {
             var existingCategory = await _context.Categories.FirstOrDefaultAsync(x => x.CategoryId == id);
             if (existingCategory == null)

@@ -1,7 +1,7 @@
 ﻿using ECommerce.Data;
 using ECommerce.DTOs.Item;
 using ECommerce.DTOs.Order;
-using ECommerce.Interfaces;
+using ECommerce.Interfaces.Repository;
 using ECommerce.Models;
 using Microsoft.EntityFrameworkCore;
 

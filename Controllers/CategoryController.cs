@@ -1,6 +1,7 @@
 ﻿using ECommerce.Data;
 using ECommerce.DTOs.Category;
-using ECommerce.Interfaces;
+using ECommerce.Interfaces.Repository;
+using ECommerce.Interfaces.Service;
 using ECommerce.Mappers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,60 +13,64 @@ namespace ECommerce.Controllers
     [Authorize]
     public class CategoryController : ControllerBase
     {
-        private readonly ICategoryRepository _categoryRepo;
-        private readonly ApplicationDBContext _context;
-        public CategoryController(ApplicationDBContext context, ICategoryRepository categoryRepo)
+        private readonly ICategoryService _categoryService;
+        public CategoryController(ICategoryService categoryService)
         {
-            _context = context;
-            _categoryRepo = categoryRepo;
+            _categoryService = categoryService;
         }
 
-        [HttpGet]
+        [HttpGet("getAllCategories")]
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
         public async Task<IActionResult> GetAllCategories()
         {
-            var categories = await _categoryRepo.GetAllAsync();
+            try
+            {
+                var categories = await _categoryService.GetAllCategoriesAsync();
+                Console.WriteLine("user called the get all categories endpoint");
+                return Ok(categories);
 
-            var categoryDto = categories.Select(s => s.ToCategoryDto()).ToList();
-
-            return Ok(categoryDto);
+            }
+            catch (Exception ex) { 
+                Console.WriteLine(ex.Message);
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet("{id:int}")]
         [Authorize(Roles = "Customer, SuperAdmin, Admin")]
         public async Task<IActionResult> GetCategoryById([FromRoute] int id)
         {
-            var category = await _categoryRepo.GetByIdAsync(id);
-
-            if (category == null)
+            try
             {
-                return NotFound("The Id you entered does not exist");
+                var category = await _categoryService.GetCategoryByIdAsync(id);
+                Console.WriteLine("user called the get category by id endpoint");
+                return Ok(category);
             }
-
-            return Ok(category.ToCategoryDto());
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest(ex.Message);
+            }
         }
 
-        [HttpPost]
+        [HttpPost("createACategory")]
         [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> CreateCategory([FromBody] CreateCategoryRequestDto categoryDto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var category = await _categoryRepo.GetByNameAsync(categoryDto.CategoryName);
-
-            if (category != null)
+            try
             {
-                return BadRequest("This category already exists");
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                var createdCategory = await _categoryService.CreateCategoryAsync(categoryDto);
+                Console.WriteLine("user called the create category endpoint");
+                return CreatedAtAction(nameof(GetCategoryById), new { id = createdCategory.CategoryId }, createdCategory);
             }
-
-            var categoryModel = categoryDto.ToCategoryFromCreateDto();
-
-            categoryModel.CreatedOn = DateTime.Now;
-
-            await _categoryRepo.CreateAsync(categoryModel);
-
-            return CreatedAtAction(nameof(CreateCategory), new { id = categoryModel.CategoryId }, categoryModel.ToCategoryDto());
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest(ex.Message);
+            }
         }
 
 
@@ -74,21 +79,20 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> UpdateCategory([FromRoute] int id, [FromBody] UpdateCategoryRequestDto updateDto)
         {
-            var category = await _categoryRepo.GetByIdAsync(id);
-
-            if (category == null)
+            try
             {
-                return NotFound("Category not found");
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                var updatedCategory = await _categoryService.UpdateCategoryAsync(id, updateDto);
+                Console.WriteLine("user called the update category endpoint");
+                return Ok(updatedCategory);
             }
-
-            var categoryModel = await _categoryRepo.UpdateAsync(id, updateDto);
-
-            if (categoryModel == null)
+            catch (Exception ex)
             {
-                return NotFound();
+                Console.WriteLine(ex.Message);
+                return BadRequest(ex.Message);
             }
-
-            return Ok(category.ToCategoryDto());
         }
 
         [HttpDelete]
@@ -96,14 +100,20 @@ namespace ECommerce.Controllers
         [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> DeleteCategory([FromRoute] int id)
         {
-            var categoryModel = await _categoryRepo.DeleteByIdAsync(id);
-
-            if (categoryModel == null)
+            try
             {
-                return NotFound("Category not found");
-            }
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            return Ok(categoryModel);
+                var deletedCategory = await _categoryService.DeleteCategoryAsync(id);
+                Console.WriteLine("user called the delete category endpoint");
+                return Ok(deletedCategory);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

@@ -65,32 +65,6 @@
   },
   {
     "ContainingType": "ECommerce.Controllers.CategoryController",
-    "Method": "GetAllCategories",
-    "RelativePath": "api/Categories",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ECommerce.Controllers.CategoryController",
-    "Method": "CreateCategory",
-    "RelativePath": "api/Categories",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "categoryDto",
-        "Type": "ECommerce.DTOs.Category.CreateCategoryRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ECommerce.Controllers.CategoryController",
     "Method": "GetCategoryById",
     "RelativePath": "api/Categories/{id}",
     "HttpMethod": "GET",
@@ -143,65 +117,34 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ECommerce.Controllers.ItemController",
-    "Method": "GetAllItems",
-    "RelativePath": "api/Items",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ItemName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "CategoryName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "SortBy",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "IsDescending",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "PageNumber",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "PageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ECommerce.Controllers.ItemController",
-    "Method": "CreateItem",
-    "RelativePath": "api/Items",
+    "ContainingType": "ECommerce.Controllers.CategoryController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/Categories/createACategory",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "itemDto",
-        "Type": "ECommerce.DTOs.Item.Items",
+        "Name": "categoryDto",
+        "Type": "ECommerce.DTOs.Category.CreateCategoryRequestDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ECommerce.Controllers.CategoryController",
+    "Method": "GetAllCategories",
+    "RelativePath": "api/Categories/getAllCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ECommerce.Controllers.ItemController",
-    "Method": "GetItemById",
+    "Method": "GetByItemId",
     "RelativePath": "api/Items/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -253,6 +196,47 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ECommerce.Controllers.ItemController",
+    "Method": "GetAllItems",
+    "RelativePath": "api/Items/getAllItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ItemName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsDescending",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ECommerce.Controllers.OrderController",
     "Method": "GetOrderById",
     "RelativePath": "api/Orders/{id}",
@@ -270,22 +254,6 @@
   },
   {
     "ContainingType": "ECommerce.Controllers.OrderController",
-    "Method": "AddOrder",
-    "RelativePath": "api/Orders/addOrder",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "orderDto",
-        "Type": "ECommerce.DTOs.Order.CreateOrderRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ECommerce.Controllers.OrderController",
     "Method": "CancelOrder",
     "RelativePath": "api/Orders/cancelOrder",
     "HttpMethod": "PUT",
@@ -296,6 +264,22 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerce.Controllers.OrderController",
+    "Method": "CreateOrder",
+    "RelativePath": "api/Orders/createOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderDto",
+        "Type": "ECommerce.DTOs.Order.CreateOrderRequestDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

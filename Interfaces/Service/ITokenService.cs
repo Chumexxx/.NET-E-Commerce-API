@@ -1,6 +1,6 @@
 ﻿using ECommerce.Models;
 
-namespace ECommerce.Interfaces
+namespace ECommerce.Interfaces.Service
 {
     public interface ITokenService
     {

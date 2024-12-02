@@ -16,7 +16,7 @@ namespace ECommerce.DTOs.Item
         public string Store { get; set; } = string.Empty;
 
         [Required]
-        [Range(0, 100000)]
+        [Range(0, 100000)] 
         public int QuantityInStock { get; set; }
 
         [Required]

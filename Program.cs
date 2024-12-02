@@ -1,5 +1,6 @@
 using ECommerce.Data;
-using ECommerce.Interfaces;
+using ECommerce.Interfaces.Repository;
+using ECommerce.Interfaces.Service;
 using ECommerce.Models;
 using ECommerce.Repository;
 using ECommerce.Services;
@@ -93,11 +94,20 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 
 
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddScoped<IItemService, ItemService>();
+
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+
 builder.Services.AddScoped<ITokenService, TokenService>();
+
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+
 builder.Services.AddScoped<IOrderedItemRepository, OrderedItemRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IAccountService, AccountService>();
 
 var app = builder.Build();
 

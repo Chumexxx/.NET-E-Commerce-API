@@ -4,8 +4,8 @@ using static ECommerce.Services.TokenService;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using ECommerce.Interfaces;
 using ECommerce.Models;
+using ECommerce.Interfaces.Service;
 
 namespace ECommerce.Services
 {
